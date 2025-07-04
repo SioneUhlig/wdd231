@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 Home Page</title>
+    <meta name="description" content="Homepage for WDD231">
+    <meta name="author" content="Sione Uhlig">
+    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles\larger.css">
+    <link rel="stylesheet" href="styles\normalize.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images\home.svg" alt="Site-logo" width="512" height="512">
+        <span class="site-name">Sione Uhlig </span>
+        <button class="hamburger" id="ham-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="nav-bar" class="navagation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusantium omnis eligendi libero porro
+                corporis, ipsum molestias, sit enim ut laboriosam amet dignissimos consectetur officiis consequuntur
+                unde! Vero, natus.</p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images\home.svg" alt="Site-logo" width="512" height="512">
+        </section>
+
+        <section>
+            <h2>Web Certifacate Courses</h2>
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cse">CSE</button>
+                <button class="filter-btn" data-filter="wdd">WDD</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images\github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images\linkedin.svg" alt="linkedin" width="16"
+                    height="16"></a>
+        </div>
+        <p>copyright date</p>
+        <p>last modified</p>
+    </footer>
+    <script src="scripts\navagation.js"></script>
+
+</body>
+
+</html>

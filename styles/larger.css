@@ -1,0 +1,32 @@
+@media only screen and (min-width: 38rem) {
+
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navagation {
+        display: block;
+        border-bottom: solid 1px black;
+    }
+
+    .navagation ul {
+        display: flex;
+    }
+
+    .navagation a {
+        border: none;
+    }
+
+
+}
