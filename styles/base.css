@@ -79,11 +79,46 @@ header span {
     background-color: beige;
 }
 
+
+/*********************** Main *****************************/
+main {
+    display: block;
+    margin-left: 10px;
+
+}
+
 h1 {
     margin-left: 10px;
 }
 
+
+
 h2 {
+    background-color: antiquewhite;
+    margin-left: 10px;
+}
+
+p {
+    background-color: aquamarine;
+    margin-left: 10px;
+}
+
+
+main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 290px;
+    height: auto;
+    border: solid 10px aquamarine;
+}
+
+.course-list {
+    margin-left: 10px;
+}
+
+.course-filters {
     margin-left: 10px;
 }
 

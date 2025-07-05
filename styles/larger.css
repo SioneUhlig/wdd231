@@ -28,5 +28,42 @@
         border: none;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        margin-left: 0;
+    }
+
+    main section:nth-child(2) {
+        /* About Me section */
+        order: 1;
+    }
+
+    main section:nth-child(3) {
+        /* Student Photo section */
+        order: 2;
+    }
+
+    main section:nth-child(4) {
+        /* Courses section */
+        grid-column: 1 / -1;
+        order: 3;
+    }
+
+    h2 {
+        margin-left: 0;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
+
 
 }
