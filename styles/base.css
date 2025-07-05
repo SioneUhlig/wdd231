@@ -2,6 +2,7 @@
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     font-style: normal;
+    color: #000080;
 }
 
 /*********************** Header *****************************/
@@ -21,11 +22,12 @@ header img {
     width: 100%;
     height: auto;
     padding-bottom: 5px;
+    color: #000080;
 }
 
 header span {
     font-size: 1.2rem;
-    color: aqua;
+    color: #000080;
 }
 
 .hamburger {
@@ -82,7 +84,6 @@ header span {
 /*********************** Main *****************************/
 main {
     display: block;
-    margin-left: 10px;
 
 }
 
@@ -98,33 +99,90 @@ h2 {
 }
 
 p {
-    background-color: aquamarine;
     margin-left: 10px;
 }
 
 
 main img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+    display: block;
     width: 290px;
     height: auto;
-    border: solid 10px aquamarine;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .course-list {
-    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 10px;
 }
 
 .course-filters {
-    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 10px;
+
+}
+
+.filter-btn {
+    text-align: center;
+    align-items: center;
+}
+
+.filter-btn:hover {
+    background-color: aqua;
+}
+
+.course-card {
+
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.course-card:hover {
+    border-color: black;
+}
+
+.credits-info {
+    text-align: center;
+}
+
+#completed {
+    color: green;
+    font-weight: bold;
+}
+
+section h2 {
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(127, 255, 212, .5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10PX;
+}
+
+.course-p {
+    text-align: center;
 }
 
 /*********************** Footer *****************************/
 footer {
     background-color: antiquewhite;
     padding: 1rem 10px;
+    border-radius: 8px;
     text-align: center;
 }
 
