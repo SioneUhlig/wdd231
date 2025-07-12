@@ -7,7 +7,6 @@
 @font-face {
     font-family: 'Roboto Slab Fallback';
     src: local('Georgia'), local('Times New Roman'), local('serif');
-    size-adjust: 95%;
 }
 
 body {
