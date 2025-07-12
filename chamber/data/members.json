@@ -1,15 +1,5 @@
 [
     {
-        "name": "Wood World of Texas",
-        "tagline": "Woodworking supply store",
-        "address": "13650 T I Blvd #101, Dallas, TX 75243",
-        "phone": "(972)669-9130",
-        "email": "woodworldtx@gmail.com",
-        "website": "https://woodworldtx.com/",
-        "image": "images/woodworld.webp",
-        "membershipLevel": 2
-    },
-    {
         "name": "Rodeo Goat",
         "tagline": "Hamburger restaurant",
         "address": "1926 Market Center Blvd, Dallas, TX 75207",
@@ -18,6 +8,16 @@
         "website": "https://www.rodeogoat.com/dallas/",
         "image": "images/rodeogoat.webp",
         "membershipLevel": 3
+    },
+    {
+        "name": "Wood World of Texas",
+        "tagline": "Woodworking supply store",
+        "address": "13650 T I Blvd #101, Dallas, TX 75243",
+        "phone": "(972)669-9130",
+        "email": "woodworldtx@gmail.com",
+        "website": "https://woodworldtx.com/",
+        "image": "images/woodworld.webp",
+        "membershipLevel": 2
     },
     {
         "name": "Hutchins BBQ",

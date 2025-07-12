@@ -49,8 +49,12 @@ function createMemberCard(member) {
 
     card.innerHTML = `
         <div class="member-image">
-            <img src="${member.image}" alt="${member.name}" 
-                 onerror="this.style.display='none'">
+            <img src="${member.image}" 
+     alt="${member.name}" 
+     width="300" 
+     height="200"
+     loading="lazy"
+     style="aspect-ratio: 3/2; object-fit: cover;">
         </div>
         <div class="member-info">
             <h3>${member.name}</h3>

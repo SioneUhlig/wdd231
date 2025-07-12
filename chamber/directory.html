@@ -10,8 +10,8 @@
     <meta property="og:title" content="Dallas Chamber of Commerce - Business Directory">
     <meta property="og:description"
         content="Connect with local businesses and discover opportunities in the Dallas area">
-    <meta property="og:image" content="https://example.com/images/dallas-chamber-og.jpg">
-    <meta property="og:url" content="https://sioneuhlig.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://sioneuhlig.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://sioneuhlig.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
     <title>Business Directory - Chamber Directory Page</title>
@@ -24,14 +24,16 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.woff2" as="font"
+        type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="image/favicon.ico">
 
 </head>
 
 <body>
     <header>
-        <img src="images/home.svg" alt="Dallas Chamber Logo" width="512" height="512">
+        <img src="images/home.svg" alt="Dallas Chamber Logo" width="24" height="24">
         <span class="site-name">Dallas Chamber of Commerce</span>
         <button class="hamburger" id="ham-btn">
             <span></span>
@@ -58,11 +60,11 @@
 
 
         <section class="directory-header">
-            <h1>Business Directory</h1>
+            <h2>Business Directory</h2>
             <p>Discover and connect with local businesses that make Dallas thrive</p>
             <div class="view-controls">
-                <button id="grid-view" class="view-btn active">Grid View</button>
-                <button id="list-view" class="view-btn">List View</button>
+                <button id="grid-view" class="view-btn active" aria-label="Switch to grid view">Grid View</button>
+                <button id="list-view" class="view-btn" aria-label="Switch to list view">List View</button>
             </div>
         </section>
 
@@ -97,10 +99,8 @@
             <div class="project-info">
                 <p>WDD231 Class Project</p>
                 <p>Sione Uhlig</p>
-                <span id="yearjs"></span>
-                <div>
-                    <span id="lastmodified">Last Modification: </span>
-                </div>
+                <span class="highlight"></span>
+                <div>Last Modification: <span id="lastmodified"></span></div>
             </div>
         </div>
     </footer>

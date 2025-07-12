@@ -1,7 +1,7 @@
-const year = document.querySelector("#yearjs");
+const year = document.querySelector("#lastmodified");
 const today = new Date();
 
-year.innerHTML = `<span class="highlight">${today.getFullYear()} Dallas Chamber of Commerce </span>`;
+year.innerHTML = `<span class="highlight">${today.getFullYear()} Dallas Chamber of Commerce</span>`;
 
 const lastModified = document.lastModified;
 document.querySelector('#lastmodified').textContent += lastModified;
