@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Wood World of Texas",
+        "tagline": "Woodworking supply store",
+        "address": "13650 T I Blvd #101, Dallas, TX 75243",
+        "phone": "(972)669-9130",
+        "email": "woodworldtx@gmail.com",
+        "website": "https://woodworldtx.com/",
+        "image": "image/woodworld.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Rodeo Goat",
+        "tagline": "Hamburger restaurant",
+        "address": "1926 Market Center Blvd, Dallas, TX 75207",
+        "phone": "(214)741-4628",
+        "email": "RodeoGoat@gmail.com",
+        "website": "https://www.rodeogoat.com/dallas/",
+        "image": "image/rodeogoat.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Hutchins BBQ",
+        "tagline": "Barbecue restaurant",
+        "address": "9225 Preston Rd, Frisco, TX 75033",
+        "phone": "(972)377-2046",
+        "email": "info@hutchinsbbq.com",
+        "website": "https://hutchinsbbq.com/",
+        "image": "image/hutchins.jpeg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Pappasito's Cantina",
+        "tagline": "Mexican restaurant",
+        "address": "723 S Central Expy, Richardson, TX 75080",
+        "phone": "(972)480-8595",
+        "email": "info@pappasitos.com",
+        "website": "https://pappasitos.com/location/55",
+        "image": "image/pappasitos.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Texas Instruments Incorporated - North Campus",
+        "tagline": "Semi conductor supplier",
+        "address": "13536 N Central Expy, Dallas, TX 75243",
+        "phone": "(855)226-3113",
+        "email": "info@TI.com",
+        "website": "https://www.ti.com/",
+        "image": "image/texasinstruments.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Kwik Kar Lube & Wash Dallas",
+        "tagline": "Auto repair shop",
+        "address": "12220 Greenville Ave, Dallas, TX 75243",
+        "phone": "(469)206-1787",
+        "email": "info@kwikkarntx.com",
+        "website": "https://www.kwikkarntx.com/kwik-kar-12220-greenville-ave",
+        "image": "image/kwikkar.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Moxie Pest Control",
+        "tagline": "Pest control service",
+        "address": "14282 Gillis Rd, Farmers Branch, TX 75244",
+        "phone": "(817)736-1882",
+        "email": "info@Moxie.com",
+        "website": "https://moxieservices.com/locations/dallas/?utm_campaign=gmb",
+        "image": "image/moxie.webp",
+        "membershipLevel": 1
+    }
+]
