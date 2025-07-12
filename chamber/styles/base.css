@@ -108,7 +108,7 @@ header .site-name {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     align-items: start;
     min-height: 150px;
 }
