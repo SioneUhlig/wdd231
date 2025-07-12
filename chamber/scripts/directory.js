@@ -57,7 +57,7 @@ function createMemberCard(member) {
      style="aspect-ratio: 3/2; object-fit: cover;">
         </div>
         <div class="member-info">
-            <h3>${member.name}</h3>
+            <h2>${member.name}</h2>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> <a href="tel:${member.phone}">${member.phone}</a></p>
             <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
