@@ -6,7 +6,7 @@
         "phone": "(972)669-9130",
         "email": "woodworldtx@gmail.com",
         "website": "https://woodworldtx.com/",
-        "image": "images/woodworld.jpg",
+        "image": "images/woodworld.webp",
         "membershipLevel": 2
     },
     {
@@ -16,7 +16,7 @@
         "phone": "(214)741-4628",
         "email": "RodeoGoat@gmail.com",
         "website": "https://www.rodeogoat.com/dallas/",
-        "image": "images/rodeogoat.jpg",
+        "image": "images/rodeogoat.webp",
         "membershipLevel": 3
     },
     {
@@ -26,7 +26,7 @@
         "phone": "(972)377-2046",
         "email": "info@hutchinsbbq.com",
         "website": "https://hutchinsbbq.com/",
-        "image": "images/hutchins.jpeg",
+        "image": "images/hutchins.webp",
         "membershipLevel": 3
     },
     {
@@ -36,7 +36,7 @@
         "phone": "(972)480-8595",
         "email": "info@pappasitos.com",
         "website": "https://pappasitos.com/location/55",
-        "image": "images/pappasitos.jpg",
+        "image": "images/pappasitos.webp",
         "membershipLevel": 3
     },
     {
@@ -46,7 +46,7 @@
         "phone": "(855)226-3113",
         "email": "info@TI.com",
         "website": "https://www.ti.com/",
-        "image": "images/texasinstruments.jpg",
+        "image": "images/texasinstruments.webp",
         "membershipLevel": 2
     },
     {
