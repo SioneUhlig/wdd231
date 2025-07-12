@@ -6,7 +6,7 @@
         "phone": "(972)669-9130",
         "email": "woodworldtx@gmail.com",
         "website": "https://woodworldtx.com/",
-        "image": "image/woodworld.jpg",
+        "image": "images/woodworld.jpg",
         "membershipLevel": 2
     },
     {
@@ -16,7 +16,7 @@
         "phone": "(214)741-4628",
         "email": "RodeoGoat@gmail.com",
         "website": "https://www.rodeogoat.com/dallas/",
-        "image": "image/rodeogoat.jpg",
+        "image": "images/rodeogoat.jpg",
         "membershipLevel": 3
     },
     {
@@ -26,7 +26,7 @@
         "phone": "(972)377-2046",
         "email": "info@hutchinsbbq.com",
         "website": "https://hutchinsbbq.com/",
-        "image": "image/hutchins.jpeg",
+        "image": "images/hutchins.jpeg",
         "membershipLevel": 3
     },
     {
@@ -36,7 +36,7 @@
         "phone": "(972)480-8595",
         "email": "info@pappasitos.com",
         "website": "https://pappasitos.com/location/55",
-        "image": "image/pappasitos.jpg",
+        "image": "images/pappasitos.jpg",
         "membershipLevel": 3
     },
     {
@@ -46,7 +46,7 @@
         "phone": "(855)226-3113",
         "email": "info@TI.com",
         "website": "https://www.ti.com/",
-        "image": "image/texasinstruments.jpg",
+        "image": "images/texasinstruments.jpg",
         "membershipLevel": 2
     },
     {
@@ -56,7 +56,7 @@
         "phone": "(469)206-1787",
         "email": "info@kwikkarntx.com",
         "website": "https://www.kwikkarntx.com/kwik-kar-12220-greenville-ave",
-        "image": "image/kwikkar.webp",
+        "image": "images/kwikkar.webp",
         "membershipLevel": 1
     },
     {
@@ -66,7 +66,7 @@
         "phone": "(817)736-1882",
         "email": "info@Moxie.com",
         "website": "https://moxieservices.com/locations/dallas/?utm_campaign=gmb",
-        "image": "image/moxie.webp",
+        "image": "images/moxie.webp",
         "membershipLevel": 1
     }
 ]

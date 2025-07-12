@@ -1,0 +1,223 @@
+.directory-header {
+    background: linear-gradient(135deg, aqua, #0066cc);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 8px;
+}
+
+.directory-header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.view-btn {
+    background: linear-gradient(135deg, aqua, #0066cc);
+    color: #000080;
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.view-btn:hover {
+    background: linear-gradient(135deg, aqua, antiquewhite);
+    color: #000080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.view-btn.active {
+    background: white;
+    color: #000080;
+}
+
+.directory-content {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 2rem;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.member-grid .member-card {
+    background: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 5px solid aqua;
+}
+
+.member-grid .member-card:hover {
+    transform: translateY(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.member-grid .member-image {
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-grid .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.member-grid .member-info {
+    padding: 1.5rem;
+}
+
+.member-grid .member-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #000080;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.member-grid .member-info p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.member-grid .member-info strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.member-grid .member-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.member-grid .member-info a:hover {
+    color: #000080;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.member-list .member-card {
+    background: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    border: 5px solid aqua;
+}
+
+.member-list .member-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-list .member-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-list .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-list .member-info {
+    flex: 1;
+}
+
+.member-list .member-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #000080;
+    font-size: 1.2rem;
+}
+
+.member-list .member-info p {
+    margin: 0.25rem 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.member-list .member-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.member-list .member-info a:hover {
+    text-decoration: underline;
+}
+
+.membership-level {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge.gold {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #b8860b;
+    border: 2px solid #ffd700;
+}
+
+.badge.silver {
+    background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+    color: #666;
+    border: 2px solid #c0c0c0;
+}
+
+.badge.member {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: #8b4513;
+    border: 2px solid #cd7f32;
+}

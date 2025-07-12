@@ -49,7 +49,7 @@ function createMemberCard(member) {
 
     card.innerHTML = `
         <div class="member-image">
-            <img src="images/businesses/${member.image}" alt="${member.name}" 
+            <img src="${member.image}" alt="${member.name}" 
                  onerror="this.style.display='none'">
         </div>
         <div class="member-info">
