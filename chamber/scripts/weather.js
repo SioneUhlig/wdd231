@@ -3,20 +3,23 @@ const weatherIcon = document.querySelector('#weather-icon');
 const myDiscription = document.querySelector('#weather-description');
 const humidityElement = document.querySelector('#weather-humidity');
 const forecastContainer = document.querySelector('#forecast-container');
+const tempMax = document.querySelector('#temp-max');
+const tempMin = document.querySelector('#temp-min');
+const tempFeel = document.querySelector('#temp-feel');
 
 const myKey = "35b2a754cac71754ea8830c81a50210b"
 const myLat = "32.776156345339935"
 const myLong = "-96.794972134866"
 
-const URL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
-const forecastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial` // ADD THIS LINE
+const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial` // ADD THIS LINE
 
 async function apiFetch() {
     try {
         const response = await fetch(URL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -42,7 +45,10 @@ async function forecastFetch() {
 
 function displayResults(data) {
     myDiscription.innerHTML = data.weather[0].description
-    myTemp.innerHTML = `${data.main.temp}&deg;F`
+    myTemp.innerHTML = `${data.main.temp}&deg; F`
+    tempMax.innerHTML = `Hight Temperature ${data.main.temp_max}&deg;F`
+    tempMin.innerHTML = `Low Temperature ${data.main.temp_min}&deg;F`
+    tempFeel.innerHTML = `Feels Like ${data.main.feels_like}&deg;F`
     humidityElement.innerHTML = `${data.main.humidity}% Humidity`
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('src', iconsrc)
@@ -71,7 +77,7 @@ function displayForecast(data) {
         const forecastDay = document.createElement('div');
         forecastDay.className = 'forecast-day';
         forecastDay.innerHTML = `
-            <h4>${dayName}</h4>
+            <h2>${dayName}</h2>
             <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
             <div class="forecast-temp">${Math.round(day.main.temp)}&deg;F</div>
         `;
