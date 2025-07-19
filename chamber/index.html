@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larghome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -53,31 +53,30 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <img src="images/dallas skyline.jpg" alt="Dallas skyline" width="1200" height="400" loading="lazy">
+                <img src="images/dallas skyline.jpg" alt="Dallas skyline at sunset with downtown buildings" width="1200"
+                    height="400" loading="eager">
                 <div class="cta-overlay">
                     <a href="join.html" class="cta-button">Join the Chamber Today</a>
                 </div>
             </div>
         </section>
 
-        <h1>Home</h1>
-
+        <h1>Welcome to the Dallas Chamber of Commerce</h1>
 
         <div class="content-grid">
 
             <section class="events">
                 <h2>Current Events</h2>
                 <div class="event-item">
-                    <div class="event-date">July 18 and August 6 2025</div>
-                    <h3>Dallas Zoo Dollar Day </h3>
-                    <p>$1 to visit the Dallas Zoo! Dates: July 18 (Sold out) & August 6 Times: 8 am-5 pm.
-                        You must buy tickets online in advance.
-                    </p>
+                    <div class="event-date">July 18 and August 6, 2025</div>
+                    <h3>Dallas Zoo Dollar Day</h3>
+                    <p>$1 to visit the Dallas Zoo! Dates: July 18 (Sold out) & August 6. Times: 8 am-5 pm.
+                        You must buy tickets online in advance.</p>
                 </div>
                 <div class="event-item">
                     <div class="event-date">August 2, 2025</div>
                     <h3>Grand Opening</h3>
-                    <p>Please join us for our Grand oppening of Rodeo Goat in Arlington 5:30 - 7:30 PM </p>
+                    <p>Please join us for our Grand Opening of Rodeo Goat in Arlington 5:30 - 7:30 PM</p>
                 </div>
                 <div class="event-item">
                     <div class="event-date">August 15, 2025</div>
@@ -86,30 +85,32 @@
                 </div>
             </section>
 
-
             <section class="current-weather">
                 <h2>Current Weather</h2>
                 <div class="weather-content">
                     <div class="weather-icon-temp">
-                        <img id="weather-icon" src="" alt="" style="display: none;">
-                        <span id="current-temp"></span>
+                        <img id="weather-icon" src="" alt="" style="display: block;" width="80" height="80">
+                        <span id="current-temp">Loading...</span>
                     </div>
                     <div class="weather-details" id="weather-details">
                         <p id="weather-description">Loading weather data...</p>
-                        <p id="weather-humidity"> </p>
+                        <p id="weather-humidity">Loading humidity...</p>
                     </div>
                 </div>
             </section>
+
             <section class="weather-forecast">
-                <h2>Weather Forecast</h2>
+                <h2>3-Day Weather Forecast</h2>
                 <div class="forecast-container" id="forecast-container">
-                    <p class="loading"></p>
+                    <p class="loading">Loading forecast...</p>
                 </div>
             </section>
         </div>
+
         <section class="spotlights">
+            <h2>Member Spotlights</h2>
             <div class="spotlight-container" id="spotlight-container">
-                <p class="loading"></p>
+                <p class="loading">Loading member spotlights...</p>
             </div>
         </section>
     </main>

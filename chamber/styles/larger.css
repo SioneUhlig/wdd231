@@ -37,6 +37,11 @@
         padding: 0 1rem;
     }
 
+    .hero {
+        grid-column: 1 / -1;
+        margin: 1rem 0 2rem 0;
+    }
+
     main h1 {
         grid-column: 1 / -1;
         margin-left: 0;
