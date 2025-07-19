@@ -65,29 +65,51 @@
 
         <div class="content-grid">
 
+            <section class="events">
+                <h2>Current Events</h2>
+                <div class="event-item">
+                    <div class="event-date">July 18 and August 6 2025</div>
+                    <h3>Dallas Zoo Dollar Day </h3>
+                    <p>$1 to visit the Dallas Zoo! Dates: July 18 (Sold out) & August 6 Times: 8 am-5 pm.
+                        You must buy tickets online in advance.
+                    </p>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">August 2, 2025</div>
+                    <h3>Grand Opening</h3>
+                    <p>Please join us for our Grand oppening of Rodeo Goat in Arlington 5:30 - 7:30 PM </p>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">August 15, 2025</div>
+                    <h3>Woodworking Workshop</h3>
+                    <p>Learn essential skills for Woodworking. Join us at Wood World of Texas</p>
+                </div>
+            </section>
+
 
             <section class="current-weather">
                 <h2>Current Weather</h2>
                 <div class="weather-content">
                     <div class="weather-icon-temp">
                         <img id="weather-icon" src="" alt="" style="display: none;">
-                        <span id="current-temperature"></span>
+                        <span id="current-temp"></span>
                     </div>
-                    <div class="weather-details">
-
+                    <div class="weather-details" id="weather-details">
+                        <p id="weather-description">Loading weather data...</p>
+                        <p id="weather-humidity"> </p>
                     </div>
                 </div>
             </section>
             <section class="weather-forecast">
                 <h2>Weather Forecast</h2>
                 <div class="forecast-container" id="forecast-container">
-                    <p></p>
+                    <p class="loading"></p>
                 </div>
             </section>
         </div>
         <section class="spotlights">
             <div class="spotlight-container" id="spotlight-container">
-                <h2 class="loading">Spotlight</h2>
+                <p class="loading"></p>
             </div>
         </section>
     </main>
@@ -122,6 +144,7 @@
     <script src="scripts/footer.js"></script>
     <script src="scripts/navagation.js"></script>
     <script src="scripts/home.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
