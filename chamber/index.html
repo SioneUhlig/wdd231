@@ -53,7 +53,7 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <img src="images/dallas skyline.jpg" alt="Dallas skyline at sunset with downtown buildings" width="1200"
+                <img src="images/dallasskyline.jpg" alt="Dallas skyline at sunset with downtown buildings" width="1200"
                     height="400" loading="eager">
                 <div class="cta-overlay">
                     <a href="join.html" class="cta-button">Join the Chamber Today</a>
@@ -89,7 +89,8 @@
                 <h2>Current Weather</h2>
                 <div class="weather-content">
                     <div class="weather-icon-temp">
-                        <img id="weather-icon" src="" alt="" style="display: block;" width="80" height="80">
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
+                            alt="" width="80" height="80">
                         <span id="current-temp">Loading...</span>
                     </div>
                     <div class="weather-details" id="weather-details">
