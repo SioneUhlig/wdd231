@@ -4,6 +4,9 @@ const navlinks = document.querySelector('#nav-bar');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const courseCards = document.querySelectorAll('.course-card');
 const totalCreditsSpan = document.getElementById('total-credits');
+const courseModal = document.getElementById('courseModal');
+const modalContent = document.getElementById('modalContent');
+
 
 navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
