@@ -1,8 +1,14 @@
 @media only screen and (min-width: 38rem) {
 
     body {
-        max-width: 1200px;
         margin: 0 auto;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .directory-content {
+        padding: 8px;
+        max-width: none;
     }
 
     header {
@@ -31,7 +37,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        padding: 0 1rem;
     }
 
     .hero {
@@ -52,6 +57,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+
     .weather-forecast {
         grid-column: 1 / -1;
     }
@@ -118,10 +124,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
-        max-width: 1200px;
         margin: 0 auto;
         padding: 8px;
     }
+
     .spotlight-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
