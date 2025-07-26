@@ -15,12 +15,12 @@
     <meta property="og:url" content="https://sioneuhlig.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
-    <title>Dallas Chamber of Commerce - Home</title>
+    <title>Join - Dallas Chamber of Commerce</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/larghome.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -50,7 +50,115 @@
         </ul>
     </nav>
 
-    <main>     
+    <main>
+        <section class="join-header">
+            <h1>Join the Dallas Chamber of Commerce</h1>
+            <p>Connect with local businesses and foster economic growth in the Dallas area</p>
+        </section>
+
+        <div class="form-container">
+            <section class="membership-form">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label for="firstName">
+                            First Name *
+                            <input type="text" id="firstName" name="firstName" required autocomplete="given-name"
+                                title="Please enter your first name">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">
+                            Last Name *
+                            <input type="text" id="lastName" name="lastName" required autocomplete="family-name"
+                                title="Please enter your last name">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">
+                            Organizational Title
+                            <input type="text" id="title" name="title" autocomplete="organization-title"
+                                title="Your position within your organization" pattern="[A-Za-z\s\-]{7,}"
+                                title="Must be at least 7 characters and contain only letters, spaces, and hyphens">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address *
+                            <input type="email" id="email" name="email" required autocomplete="email"
+                                title="Please enter a valid email address" placeholder="john@example.com">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Mobile Phone Number *
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel-national"
+                                title="Please enter your mobile phone number">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">
+                            Business/Organization Name *
+                            <input type="text" id="organization" name="organization" required
+                                autocomplete="organization" title="Please enter your business or organization name">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membershipLevel">
+                            Membership Level *
+                            <select id="membershipLevel" name="membershipLevel" required
+                                title="Choose your desired membership level">
+                                <option value="">Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit) - Free</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">
+                            Business/Organization Description
+                            <textarea id="description" name="description" title="Describe your business or organization"
+                                placeholder="Tell us about your business or organization..."></textarea>
+                        </label>
+                    </div>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <div class="membership-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" class="learn-more-btn" onclick="openModal('npModal')">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" class="learn-more-btn" onclick="openModal('bronzeModal')">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" class="learn-more-btn" onclick="openModal('silverModal')">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" class="learn-more-btn" onclick="openModal('goldModal')">Learn More</button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -82,8 +190,7 @@
 
     <script src="scripts/footer.js"></script>
     <script src="scripts/navagation.js"></script>
-    <script src="scripts/home.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>

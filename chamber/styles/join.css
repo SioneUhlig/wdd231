@@ -1,0 +1,299 @@
+.join-header {
+    background: linear-gradient(135deg, aqua, #0066cc);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.join-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.membership-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form h2 {
+    color: #000080;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #0066cc, aqua);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #004499, #40E0D0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.membership-levels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background-size: 300% 300%;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+    background: linear-gradient(45deg, #8B7355, #D2B48C, #F5DEB3, #DEB887, #8B7355);
+    background-size: 200% 200%;
+    color: #4A4A4A;
+    animation: slideInUp 0.6s ease-out 0.1s forwards, gradientShift 15s ease-in-out 3s infinite;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+    background: linear-gradient(45deg, #CD7F32, #D2691E, #F4A460, #FF8C00, #CD7F32);
+    background-size: 200% 200%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: slideInUp 0.6s ease-out 0.2s forwards, gradientShift 15s ease-in-out 5s infinite;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+    background: linear-gradient(45deg, #708090, #A9A9A9, #C0C0C0, #B0B0B0, #708090);
+    background-size: 200% 200%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    animation: slideInUp 0.6s ease-out 0.3s forwards, gradientShift 15s ease-in-out 7s infinite;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FFFF99, #FFE55C, #FFD700);
+    background-size: 200% 200%;
+    color: #8B4513;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 0.6s ease-out 0.4s forwards, gradientShift 15s ease-in-out 9s infinite;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.membership-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.membership-card:nth-child(1) h3 {
+    color: #000080;
+}
+
+.membership-card:nth-child(2) h3 {
+    color: #000080;
+}
+
+.membership-card:nth-child(3) h3 {
+    color: #000080;
+}
+
+.membership-card:nth-child(4) h3 {
+    color: #000080;
+}
+
+.learn-more-btn {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.membership-card:nth-child(1) .learn-more-btn {
+    color: #000080;
+    border-color: #8B4513;
+}
+
+.membership-card:nth-child(2) .learn-more-btn {
+    color: #000080;
+    border-color: black;
+}
+
+.membership-card:nth-child(3) .learn-more-btn {
+    color: #000080;
+    border-color: black;
+}
+
+.membership-card:nth-child(4) .learn-more-btn {
+    color: #000080;
+    border-color: black;
+}
+
+.learn-more-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .membership-levels {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-levels {
+        order: 2;
+    }
+
+    .membership-form {
+        order: 1;
+    }
+}
