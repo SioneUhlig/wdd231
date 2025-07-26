@@ -137,6 +137,7 @@ main img {
 
 .filter-btn:hover {
     background-color: aqua;
+    transform: translateY(-2px);
 }
 
 .course-card {
@@ -180,6 +181,75 @@ section {
 
 .course-p {
     text-align: center;
+}
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin: 0 0 0.5rem 0;
+    background-color: transparent;
+    color: #000080;
+    font-size: 1.5rem;
+}
+
+.modal-content h3 {
+    margin: 0 0 1rem 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.modal-content p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.modal-content strong {
+    color: #000080;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#closeModal:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.course-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*********************** Footer *****************************/
