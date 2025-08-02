@@ -1,0 +1,76 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "name": "Dallas Museum of Art",
+            "address": "1717 North Harwood Street, Dallas, TX 75201",
+            "cost": "Free general admission; paid tickets for special exhibitions",
+            "description": "Located in the vibrant Arts District, the DMA features a diverse collection of global art—from classic to contemporary.",
+            "photo_url": "https://via.placeholder.com/300x200/4a90e2/ffffff?text=Dallas+Museum+of+Art",
+            "image": "images/dallas-art.webp"
+        },
+        {
+            "id": 2,
+            "name": "Dallas Zoo",
+            "address": "650 South R.L. Thornton Freeway, Dallas, TX 75203",
+            "cost": "Regular admission $15; kids under 2 free; parking $12",
+            "description": "Texas's largest zoo with over 2,000 animals across 106 acres and seasonal promotional days.",
+            "photo_url": "https://via.placeholder.com/300x200/50c878/ffffff?text=Dallas+Zoo",
+            "image": "images/dallas-zoo.webp"
+        },
+        {
+            "id": 3,
+            "name": "Reunion Tower GeO-Deck",
+            "address": "300 Reunion Blvd E., Dallas, TX 75207",
+            "cost": "Adult $25, Youth $15, Senior $15 to varies",
+            "description": "Iconic observation tower offering panoramic city views from 470 feet, especially great at night.",
+            "photo_url": "https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Reunion+Tower",
+            "image": "images/reunion-tower.webp"
+        },
+        {
+            "id": 4,
+            "name": "Dallas Arboretum & Botanical Garden",
+            "address": "8525 Garland Road, Dallas, TX 75218",
+            "cost": "Adult $25.95, Child $17.95; parking $10",
+            "description": "Stunning gardens along White Rock Lake with seasonal festivals, flower shows, and outdoor concerts.",
+            "photo_url": "https://via.placeholder.com/300x200/32cd32/ffffff?text=Dallas+Arboretum",
+            "image": "images/dallas-garden.webp"
+        },
+        {
+            "id": 5,
+            "name": "The Sixth Floor Museum at Dealey Plaza",
+            "address": "411 Elm Street, Dallas, TX 75202",
+            "cost": "Online: Adult $22, Youth $18, Senior $20; On-site ~$25",
+            "description": "Museum chronicling JFK's assassination and legacy in the historic Texas School Book Depository.",
+            "photo_url": "https://via.placeholder.com/300x200/8b4513/ffffff?text=Sixth+Floor+Museum",
+            "image": "images/sixth-floor.webp"
+        },
+        {
+            "id": 6,
+            "name": "Bishop Arts District",
+            "address": "419 N Bishop Ave, Dallas, TX 75208",
+            "cost": "Free to explore; pay per shop/venue",
+            "description": "Eclectic neighborhood with indie shops, art galleries, cafés, and nightlife—great for strolling.",
+            "photo_url": "https://via.placeholder.com/300x200/ff1493/ffffff?text=Bishop+Arts+District",
+            "image": "images/bishop-arts.webp"
+        },
+        {
+            "id": 7,
+            "name": "White Rock Lake Activities",
+            "address": "White Rock Lake Park, Dallas, TX",
+            "cost": "Free to explore; kayak/paddleboard ~$15 to 25/hour",
+            "description": "Scenic outdoor destination for kayaking, paddleboarding, walking, and cycling around the lake.",
+            "photo_url": "https://via.placeholder.com/300x200/1e90ff/ffffff?text=White+Rock+Lake",
+            "image": "images/white-rock.webp"
+        },
+        {
+            "id": 8,
+            "name": "Pioneer Plaza & Cattle Drive Sculptures",
+            "address": "Downtown Dallas near Convention Center",
+            "cost": "Free",
+            "description": "Iconic public art installation featuring a bronze cattle drive—perfect for photos and local history.",
+            "photo_url": "https://via.placeholder.com/300x200/daa520/ffffff?text=Pioneer+Plaza",
+            "image": "images/cattle-drive.webp"
+        }
+    ]
+}
