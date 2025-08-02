@@ -47,7 +47,7 @@ header .site-name {
 }
 
 .discover-header {
-    background: linear-gradient(135deg, aqua, #0066cc, #0066cc, #0066cc, aqua);
+    background: linear-gradient(135deg, #0066cc, #0066cc, #0066cc, aqua);
     color: white;
     padding: 2rem 1rem;
     text-align: center;
