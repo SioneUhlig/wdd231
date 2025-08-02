@@ -1,11 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: 'Roboto Slab', 'Roboto Slab Fallback', Georgia, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 .5rem;
 }
 
 header {
-
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
@@ -19,8 +28,26 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #000080;
+}
+
+header .site-name {
+    font-size: 1.2rem;
+    color: #000080;
+    font-weight: bold;
+}
+
 .discover-header {
-    background: linear-gradient(135deg, aqua, #0066cc);
+    background: linear-gradient(135deg, aqua, #0066cc, #0066cc, #0066cc, aqua);
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -32,7 +59,6 @@ header {
 .discover-header h1 {
     margin: 0 0 1rem 0;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .discover-header p {
@@ -61,7 +87,6 @@ header {
     padding: 2rem;
 }
 
-
 .discover-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -81,10 +106,6 @@ header {
     transform: translateY(0);
 }
 
-.location-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
 
 .location-image {
     height: 200px;
@@ -102,35 +123,6 @@ header {
     object-fit: cover;
     transition: all 0.3s ease;
     display: block;
-}
-
-@media (min-width: 641px) {
-
-    .hamburger {
-        display: none;
-    }
-
-    .location-image img:hover {
-        filter: brightness(1.1) contrast(1.1) saturate(1.2);
-        transform: scale(1.05);
-    }
-
-    .location-image:hover img {
-        filter: sepia(0.3) hue-rotate(15deg);
-    }
-
-    .navagation {
-        display: block;
-        border-bottom: solid 1px black;
-    }
-
-    .navagation ul {
-        display: flex;
-    }
-
-    .navagation a {
-        border: none;
-    }
 }
 
 .location-info {
@@ -189,17 +181,95 @@ header {
     transform: translateY(0);
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-    .discover-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        padding: 2rem;
+.navagation {
+    display: none;
+    background: white;
+    border-bottom: solid 1px black;
+}
+
+.navagation.show {
+    display: block;
+}
+
+.navagation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navagation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: solid 1px black;
+    color: #333;
+}
+
+.navagation a:hover {
+    background: linear-gradient(135deg, aqua, antiquewhite);
+}
+
+.navagation li.current {
+    background: linear-gradient(135deg, beige, antiquewhite);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 3rem;
+}
+
+@media (min-width: 641px) {
+    header {
+        grid-template-columns: 24px auto;
+        padding: 10px 20px;
     }
 
     .hamburger {
         display: none;
     }
 
+    .navagation {
+        display: block !important;
+        border-bottom: solid 1px black;
+    }
+
+    .navagation ul {
+        display: flex;
+    }
+
+    .navagation a {
+        border: none;
+        border-bottom: none;
+    }
+
+    .location-image img:hover {
+        filter: brightness(1.1) contrast(1.1) saturate(1.2);
+        transform: scale(1.05);
+    }
+
+    .location-image:hover img {
+        filter: sepia(0.3) hue-rotate(15deg);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
 
     .discover-header h1 {
         font-size: 3rem;
@@ -216,19 +286,6 @@ header {
     .location-card {
         min-width: 320px;
     }
-
-    .navagation {
-        display: block;
-        border-bottom: solid 1px black;
-    }
-
-    .navagation ul {
-        display: flex;
-    }
-
-    .navagation a {
-        border: none;
-    }
 }
 
 @media (min-width: 1025px) {
@@ -238,10 +295,6 @@ header {
         margin: 0 auto;
     }
 
-    .hamburger {
-        display: none;
-    }
-
     .discover-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
@@ -249,18 +302,4 @@ header {
         margin: 1rem 0 2rem 0;
         justify-content: center;
     }
-
-    .navagation {
-        display: block;
-        border-bottom: solid 1px black;
-    }
-
-    .navagation ul {
-        display: flex;
-    }
-
-    .navagation a {
-        border: none;
-    }
-
 }
