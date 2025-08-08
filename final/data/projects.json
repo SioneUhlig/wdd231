@@ -1,0 +1,85 @@
+{
+    "projects": [
+        {
+            "title": "Custom Jewelry Box",
+            "category": "storage",
+            "image": "images/project_1.webp",
+            "alt": "Custom Jewelry Box",
+            "description": "Elegant handcrafted jewelry boxes with custom compartments and beautiful wood grain patterns. Perfect for organizing your precious items with style and sophistication.",
+            "price": "Starting at $150",
+            "timeline": "2-3 weeks"
+        },
+        {
+            "title": "Custom Cutting Board",
+            "category": "kitchen",
+            "image": "images/project_2.webp",
+            "alt": "Custom Cutting Board",
+            "description": "Professional-grade cutting boards made from premium hardwoods. Food-safe finish and designed to last for generations of cooking memories.",
+            "price": "Starting at $75",
+            "timeline": "1-2 weeks"
+        },
+        {
+            "title": "Custom Dining Table",
+            "category": "furniture",
+            "image": "images/project_3.webp",
+            "alt": "Custom Dining Table",
+            "description": "Stunning dining tables crafted from solid wood. Custom sizes available to fit your space perfectly. A centerpiece that brings families together.",
+            "price": "Starting at $1,200",
+            "timeline": "6-8 weeks"
+        },
+        {
+            "title": "Custom Desk",
+            "category": "furniture",
+            "image": "images/project_4.webp",
+            "alt": "Custom Desk",
+            "description": "Functional and beautiful desks designed for your workspace. Built-in storage options and ergonomic design for enhanced productivity.",
+            "price": "Starting at $800",
+            "timeline": "4-6 weeks"
+        },
+        {
+            "title": "Custom Night Stand",
+            "category": "furniture",
+            "image": "images/project_5.webp",
+            "alt": "Custom Night Stand",
+            "description": "Bedside companions with elegant design and practical storage. Match your bedroom decor with custom finishes and hardware.",
+            "price": "Starting at $300",
+            "timeline": "3-4 weeks"
+        },
+        {
+            "title": "Custom Fruit Bowl",
+            "category": "decorative",
+            "image": "images/project_6.webp",
+            "alt": "Custom Fruit Bowl",
+            "description": "Beautiful fruit bowls that showcase the natural beauty of wood grain. Perfect centerpieces for kitchen countertops and dining rooms.",
+            "price": "Starting at $65",
+            "timeline": "1-2 weeks"
+        },
+        {
+            "title": "Custom Picture Frames",
+            "category": "decorative",
+            "image": "images/project_7.webp",
+            "alt": "Custom Picture Frames",
+            "description": "Handcrafted frames to showcase your memories. Various wood species and custom sizing available for any artwork or photograph.",
+            "price": "Starting at $45",
+            "timeline": "1-2 weeks"
+        },
+        {
+            "title": "Wooden Coasters",
+            "category": "accessories",
+            "image": "images/project_8.webp",
+            "alt": "Wooden Coasters",
+            "description": "Protect your furniture with style. These custom coasters feature unique wood patterns and protective finishes for lasting beauty.",
+            "price": "Starting at $25",
+            "timeline": "1 week"
+        },
+        {
+            "title": "Custom Wooden Signs",
+            "category": "decorative",
+            "image": "images/project_9.webp",
+            "alt": "Custom Wooden Signs",
+            "description": "Personalized wooden signs for your home or business. Custom text, logos, and designs carved with precision and attention to detail.",
+            "price": "Starting at $85",
+            "timeline": "2-3 weeks"
+        }
+    ]
+}

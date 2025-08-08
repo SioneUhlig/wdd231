@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sione's Precision Woodcraft</title>
+    <meta name="description"
+        content="Explore our collection of handcrafted wooden products. From custom furniture to decorative pieces, each item showcases precision craftsmanship and natural beauty.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/projects.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/woodworking.jpg" alt="Sione's Woodcraft Logo">
+            <span class="site-name">Sione's Precision Woodcraft</span>
+        </div>
+
+        <button class="hamburger" id="ham-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-header">
+            <h1>Limited Time Offers!</h1>
+            <p>Grab these handcrafted items before they're gone! Each piece is made with precision and care.</p>
+            <div class="visitor-message" id="visitor-message"></div>
+        </section>
+
+        <div class="discover-grid" id="discover-container">
+            <p class="loading">Loading Dallas attractions...</p>
+        </div>
+
+        <section class="custom-work">
+            <div class="custom-content">
+                <h2>Looking for Something Specific?</h2>
+                <p>We specialize in custom woodwork tailored to your exact specifications. From concept to completion,
+                    we work closely with you to bring your vision to life.</p>
+                <a href="contactus.html" class="custom-btn">Get Custom Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Sione's Precision Woodcraft</h3>
+                <p>1500 Marilla St</p>
+                <p>Dallas, TX 75201</p>
+                <p>SioneCraft.com</p>
+                <p>(214)-670-3215</p>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                        width="16" height="16"></a>
+                <a href="https://github.com/" target="_blank"><img src="images/githubimg.svg" alt="github logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="16" height="16"></a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Sione Uhlig</p>
+                <span id="yearjs"></span>
+                <div><span id="lastmodified"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/discover.js"></script>
+
+</body>

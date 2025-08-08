@@ -89,10 +89,50 @@ header .site-name {
 
 .discover-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
     gap: 1rem;
     padding: 1rem 8px;
     margin: 1rem 0 2rem 0;
+}
+
+.location-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.location-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.location-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.location-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.location-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.location-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.location-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.location-card:nth-child(8) {
+    grid-area: card8;
 }
 
 .location-card {
@@ -105,7 +145,6 @@ header .site-name {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .location-image {
     height: 200px;
@@ -230,6 +269,34 @@ header .site-name {
     font-size: 3rem;
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .discover-header h1 {
+        font-size: 3rem;
+    }
+
+    .location-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .location-image {
+        height: 220px;
+    }
+
+    .location-card {
+        min-width: 320px;
+    }
+}
+
 @media (min-width: 641px) {
     header {
         grid-template-columns: 24px auto;
@@ -264,30 +331,6 @@ header .site-name {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-    .discover-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        padding: 2rem;
-    }
-
-    .discover-header h1 {
-        font-size: 3rem;
-    }
-
-    .location-info h2 {
-        font-size: 1.3rem;
-    }
-
-    .location-image {
-        height: 220px;
-    }
-
-    .location-card {
-        min-width: 320px;
-    }
-}
-
 @media (min-width: 1025px) {
     body {
         padding: 0 2rem;
@@ -296,7 +339,10 @@ header .site-name {
     }
 
     .discover-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
         gap: 2.5rem;
         padding: 2rem;
         margin: 1rem 0 2rem 0;

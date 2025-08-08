@@ -231,7 +231,6 @@
     color: #666;
     padding: 2rem;
     height: 100px;
-    /* Fixed height to prevent shift */
     display: flex;
     align-items: center;
     justify-content: center;

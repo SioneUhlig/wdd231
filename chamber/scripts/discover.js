@@ -4,9 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 async function loadDiscoverContent() {
-    const response = await fetch('data/discover.json');
-    const data = await response.json();
-    displayLocations(data.locations);
+    try {
+        const response = await fetch('data/discover.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        displayLocations(data.locations);
+    } catch (error) {
+        console.error('Error loading discover content:', error);
+        const container = document.getElementById('discover-container');
+        container.innerHTML = '<p>Unable to load attractions. Please try again later.</p>';
+    }
 }
 
 function displayLocations(locations) {
