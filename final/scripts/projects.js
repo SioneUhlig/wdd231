@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 async function loadProjectsContent() {
     const response = await fetch('data/projects.json');
     const data = await response.json();
-    displayProjects(data.projects); 
+    displayProjects(data.projects);
 }
 
 function displayProjects(projects) {
@@ -21,7 +21,7 @@ function displayProjects(projects) {
 
 function createProjectCard(project) {
     const card = document.createElement('div');
-    card.className = 'project-card';
+    card.className = 'card';
 
     const imageUrl = project.image ||
         `https://via.placeholder.com/300x200/4a90e2/ffffff?text=${encodeURIComponent(project.title)}`;
@@ -30,19 +30,19 @@ function createProjectCard(project) {
     const timelineInfo = project.timeline ? `<p class="timeline"><strong>Timeline:</strong> ${project.timeline}</p>` : '';
 
     card.innerHTML = `
-        <figure class="project-image">
+        <figure class="card-image">
             <img src="${imageUrl}" 
                  alt="${project.alt || project.title}" 
                  loading="lazy" 
                  width="300" 
                  height="200">
         </figure>
-        <div class="project-info">
+        <div class="card-content">
             <h2>${project.title}</h2>
             ${priceInfo}
             ${timelineInfo}
             <p>${project.description}</p>
-            <button class="learn-more-btn" onclick="learnMore('${project.title}')">Show Interest</button>
+            <button class="btn-primary" onclick="learnMore('${project.title}')">Show Interest</button>
         </div>
     `;
 

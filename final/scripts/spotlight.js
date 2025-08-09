@@ -28,10 +28,10 @@ function displayProjects(projects) {
 
 function createProjectCard(project) {
     const card = document.createElement('div');
-    card.className = 'member-card';
+    card.className = 'card';
 
     card.innerHTML = `
-        <div class="project-image">
+        <div class="card-image">
             <img src="${project.image}" 
                  alt="${project.alt}" 
                  width="300" 
@@ -39,12 +39,12 @@ function createProjectCard(project) {
                  loading="lazy"
                  style="aspect-ratio: 3/2; object-fit: cover;">
         </div>
-        <div class="project-info">
+        <div class="card-content">
             <h2>${project.title}</h2>
             <p><strong>Price:</strong> ${project.price}</p>
             <p><strong>Timeline:</strong> ${project.timeline}</p>
             <p>${project.description}</p>
-            <button class="learn-more-btn" onclick="learnMore('${project.title}')">Show Interest</button>
+            <button class="btn-primary" onclick="learnMore('${project.title}')">Show Interest</button>
         </div>
     `;
 
