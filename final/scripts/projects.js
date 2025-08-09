@@ -1,11 +1,17 @@
+// Replace your existing projects.js file with this updated version
+
 document.addEventListener('DOMContentLoaded', function () {
     loadProjectsContent();
     handleVisitorMessage();
+    initializeModal();
 });
+
+let projectsData = [];
 
 async function loadProjectsContent() {
     const response = await fetch('data/projects.json');
     const data = await response.json();
+    projectsData = data.projects; // Store for modal use
     displayProjects(data.projects);
 }
 
@@ -73,6 +79,44 @@ function handleVisitorMessage() {
     localStorage.setItem('lastVisit', now.toString());
 }
 
+// Updated learnMore function to show modal
 function learnMore(projectTitle) {
-    alert(`Thank you for your interest in the "${projectTitle}"! Contact us for more details.`);
+    const project = projectsData.find(p => p.title === projectTitle);
+    if (project) {
+        // Populate modal
+        document.getElementById('modalTitle').textContent = project.title;
+        document.getElementById('modalImage').src = project.image;
+        document.getElementById('modalImage').alt = project.alt || project.title;
+        document.getElementById('modalDescription').textContent = project.description;
+        document.getElementById('modalPrice').textContent = `Price: ${project.price}`;
+        document.getElementById('modalTimeline').textContent = `Timeline: ${project.timeline}`;
+
+        // Show modal
+        document.getElementById('projectModal').style.display = 'block';
+    }
+}
+
+// Initialize modal functionality
+function initializeModal() {
+    const modal = document.getElementById('projectModal');
+    const closeBtn = document.querySelector('.close');
+
+    if (closeBtn) {
+        closeBtn.onclick = function () {
+            modal.style.display = 'none';
+        }
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+        }
+    });
 }

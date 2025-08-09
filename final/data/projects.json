@@ -65,7 +65,7 @@
         },
         {
             "title": "Wooden Coasters",
-            "category": "accessories",
+            "category": "decorative",
             "image": "images/project_8.webp",
             "alt": "Wooden Coasters",
             "description": "Protect your furniture with style. These custom coasters feature unique wood patterns and protective finishes for lasting beauty.",
@@ -79,6 +79,69 @@
             "alt": "Custom Wooden Signs",
             "description": "Personalized wooden signs for your home or business. Custom text, logos, and designs carved with precision and attention to detail.",
             "price": "Starting at $85",
+            "timeline": "2-3 weeks"
+        },
+        {
+            "title": "Custom Spice Rack",
+            "category": "kitchen",
+            "image": "images/spice.webp",
+            "alt": "Custom Spice Rack",
+            "description": "Organize your spices in style with our handcrafted spice racks. Multiple tiers and custom sizing to fit any kitchen space perfectly.",
+            "price": "Starting at $120",
+            "timeline": "2-3 weeks"
+        },
+        {
+            "title": "Wooden Book Holders",
+            "category": "decorative",
+            "image": "images/book.webp",
+            "alt": "Wooden Bookends",
+            "description": "Elegant bookends crafted from solid hardwood. Keep your books organized while adding a touch of natural beauty to your shelves.",
+            "price": "Starting at $55",
+            "timeline": "1-2 weeks"
+        },
+        {
+            "title": "Garden Planters",
+            "category": "storage",
+            "image": "images/garden.webp",
+            "alt": "Garden Planters",
+            "description": "Weather-resistant wooden planters for your garden or patio. Custom sizes available with proper drainage and protective finishes.",
+            "price": "Starting at $180",
+            "timeline": "3-4 weeks"
+        },
+        {
+            "title": "Kitchen Utensil Holder",
+            "category": "kitchen",
+            "image": "images/utensil.webp",
+            "alt": "Kitchen Utensil Holder",
+            "description": "Keep your kitchen utensils organized with our handcrafted holders. Multiple compartments and food-safe finishes.",
+            "price": "Starting at $45",
+            "timeline": "1-2 weeks"
+        },
+        {
+            "title": "Custom Coffee Table",
+            "category": "furniture",
+            "image": "images/project_3.webp",
+            "alt": "Custom Coffee Table",
+            "description": "Beautiful coffee tables that become the focal point of your living room. Custom designs with storage options available.",
+            "price": "Starting at $650",
+            "timeline": "4-5 weeks"
+        },
+        {
+            "title": "Wooden Wine Rack",
+            "category": "storage",
+            "image": "images/wine.webp",
+            "alt": "Wooden Wine Rack",
+            "description": "Display and store your wine collection in style. Custom capacity and finishes to match your home decor perfectly.",
+            "price": "Starting at $200",
+            "timeline": "2-4 weeks"
+        },
+        {
+            "title": "Custom Shoe Rack",
+            "category": "storage",
+            "image": "images/shoe.webp",
+            "alt": "Custom Shoe Rack",
+            "description": "Organize your entryway with our custom shoe racks. Multiple tiers and styles available to fit any space and shoe collection.",
+            "price": "Starting at $160",
             "timeline": "2-3 weeks"
         }
     ]
