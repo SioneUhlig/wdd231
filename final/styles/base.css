@@ -352,6 +352,8 @@ footer {
     text-align: center;
     margin-top: auto;
     margin: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-info {
@@ -397,8 +399,6 @@ footer {
 .social a:hover {
     background-color: aqua;
 }
-
-/* Add this CSS to the end of your existing base.css file */
 
 .modal {
     position: fixed;
