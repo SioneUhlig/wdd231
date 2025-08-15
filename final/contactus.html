@@ -33,7 +33,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/contact.js" defer></script>
     <script src="scripts/footer.js" defer></script>
 </head>
 
@@ -44,7 +43,7 @@
             <span class="site-name">Sione's Precision Woodcraft</span>
         </div>
 
-        <button class="hamburger" id="ham-btn">
+        <button class="hamburger" id="ham-btn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
@@ -127,7 +126,7 @@
 
                     <div class="form-group">
                         <label for="written_comment">Project Description *</label>
-                        <textarea id="written_comment" name="Product" rows="6" required
+                        <textarea id="written_comment" name="written_comment" rows="6" required
                             placeholder="Please describe your project in detail, including dimensions, wood preferences, style, and any special requirements..."></textarea>
                     </div>
 

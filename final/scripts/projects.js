@@ -166,7 +166,7 @@ function addFilterFunctionality() {
     if (container && !document.querySelector('.filter-controls')) {
         const filterHTML = `
             <div class="filter-controls">
-                <h3>Filter Projects</h3>
+                <h2>Filter Projects</h2>
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="furniture">Furniture</button>

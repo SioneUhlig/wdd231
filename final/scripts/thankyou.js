@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     populateOrderSummary();
 });
@@ -21,7 +20,7 @@ function populateOrderSummary() {
         'project-type': 'Project Type',
         'budget': 'Budget Range',
         'timeline': 'Desired Timeline',
-        'Product': 'Project Description'
+        'written_comment': 'Project Description'
     };
 
     let hasData = false;
@@ -36,7 +35,6 @@ function populateOrderSummary() {
         summaryGrid.innerHTML = '<p>No order information found. Please <a href="contactus.html">submit a new request</a>.</p>';
         return;
     }
-
 
     for (let [fieldName, displayLabel] of Object.entries(formFields)) {
         const value = urlParams.get(fieldName);
